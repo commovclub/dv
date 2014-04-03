@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tab_container_scroll_box" type="id"/>
+    <item name="tab_container_index_view" type="id"/>
+    <item name="tab_container_box" type="id"/>
+    <item name="tab_indicator" type="id"/>
+    <item name="listview" type="id"/>
+
+</resources>

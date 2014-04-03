@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.myfirstapp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <ViewFlipper
+        android:id="@+id/photos"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/titles"
+        android:persistentDrawingCache="animation" >
+
+    </ViewFlipper>
+
+    <ViewFlipper
+        android:id="@+id/titles"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:persistentDrawingCache="animation" >
+    </ViewFlipper>
+
+    <com.pageIndicator.CirclePageIndicator
+    	android:id="@+id/viewflowindic"
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent" 
+ 		android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:padding="10dip"
+     />
+
+</RelativeLayout>
