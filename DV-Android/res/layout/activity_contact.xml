@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <com.commov.app.dv.widget.RoundedImageView
+                            android:id="@+id/iv_avatar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="9dp"
+                            android:padding="9dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/head_boy_200"
+                            app:corner_radius="50dp" />
+                        <TextView
+                            android:id="@+id/tv_avatar_hint"
+                            style="@style/text_little_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lines="2" 
+                            android:layout_gravity="center"
+                            android:layout_margin="9dp"
+                            android:padding="9dp"
+                            android:visibility="gone"
+                            android:text="点击这里\n上传图片"
+                            android:textColor="@color/white" />
+                        
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginRight="9dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            style="@style/text_middle_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:singleLine="true"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_desc"
+                            style="@style/text_little_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:lines="3"
+                            android:textColor="@color/dv_grey" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutSegment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/buttonIndex1"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/segment_selected"
+                        android:gravity="center"
+                        android:text="@string/profile_base"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/buttonIndex2"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/segment_normal"
+                        android:gravity="center"
+                        android:text="@string/profile_contact"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" >
+                    </Button>
+
+                    <Button
+                        android:id="@+id/buttonIndex3"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/segment_normal"
+                        android:gravity="center"
+                        android:text="@string/profile_works"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" >
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <com.handmark.pulltorefresh.library.PullToRefreshListView
+                    android:id="@+id/pull_refresh_listview"
+                    style="@style/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/ll_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="6dp"
+                        android:paddingLeft="@dimen/list_item_first_char_padding"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/list_first_char_hint_text_size" >
+                    </TextView>
+
+                    <com.commov.app.dv.widget.uitableview.UITableView
+                        android:id="@+id/tableView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent" />
+
+                    <TextView
+                        android:id="@+id/tv_title2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="6dp"
+                        android:paddingLeft="@dimen/list_item_first_char_padding"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/list_first_char_hint_text_size" >
+                    </TextView>
+
+                    <com.commov.app.dv.widget.uitableview.UITableView
+                        android:id="@+id/tableView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent" />
+
+                    <TextView
+                        android:id="@+id/tv_title3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="6dp"
+                        android:paddingLeft="@dimen/list_item_first_char_padding"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/list_first_char_hint_text_size" >
+                    </TextView>
+
+                    <com.commov.app.dv.widget.uitableview.UITableView
+                        android:id="@+id/tableView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_empty"
+                    style="@style/text_middleLittle_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="200dp"
+                    android:gravity="center"
+                    android:text="该用户还没有添加任何作品\n给他发私信提醒他吧！"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/default_color" >
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@null"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:src="@drawable/back_button" />
+
+        <Button
+            android:id="@+id/b_report"
+            style="@style/text_middleLittle_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/b_privateMessage"
+            android:background="@null"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="举报"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/b_privateMessage"
+            style="@style/text_middleLittle_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/b_following"
+            android:background="@null"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="发私信"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/b_following"
+            style="@style/text_middleLittle_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/b_edit"
+            android:background="@null"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="关注"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/b_edit"
+            style="@style/text_middleLittle_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@null"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="编辑"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <include layout="@layout/progress_wheel" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="default_bg">#f6f2ef</color>
+    <color name="default_bg_transparent">#DD4a5564</color>
+    <color name="dv_grey">#999999</color>
+    <color name="dv_blue">#26ace6</color>
+    <color name="default_color">#4a5564</color>
+    <color name="tab_item_bg_normal">#425664</color>
+    <color name="tab_item_bg_selected">#425664</color>
+    <color name="tab_item_bg_pressed">#00000000</color>
+    <color name="suggest_keyword_bg_odd">#DDD1C3</color>
+    <color name="suggest_keyword_bg_even">#EDE5DB</color>
+    <color name="suggest_keyword_content">#847362</color>
+    <color name="common_header_bar_bg">#d17a0d</color>
+    <color name="info_style_1_bg">#6FC5CE</color>
+    <color name="info_style_1_text_color">#FFFFFF</color>
+    <color name="btn_bg_color_block_style_1_pressed">#ffaa00</color>
+    <color name="btn_bg_color_block_style_1_normal">#00000000</color>
+    <color name="img_def_bg">#77d8b5</color>
+    <!-- app msg -->
+    <color name="alert">#CC0000</color>
+    <color name="confirm">#FF8800</color>
+    <color name="info">#669900</color>
+    <color name="toast_msg_bg">#86000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#0066FF</color>
+    <color name="black">#000000</color>
+    <color name="darkgrey">#444444</color>
+    <color name="lightgrey">#CCCCCC</color>
+    <color name="lightlightgrey">#EEEEEE</color>
+    <color name="words_white_color">#ffff0000</color>
+    <color name="popup_char_color">#40000000</color>
+    <color name="char_color">#ff888888</color>
+    <color name="text_color_selector">#FFFFFF</color>
+    <color name="arrangement_1">#f18178</color>
+    <color name="arrangement_2">#f7b46f</color>
+    <color name="arrangement_3">#ab99c5</color>
+    <color name="arrangement_4">#96c289</color>
+    <color name="arrangement_blue_line">#007aff</color>
+
+    <!-- LIST BORDER COLOR -->
+    <color name="rounded_container_border">#ffb7babb</color>
+
+    <!-- ITEM BACKGROUND COLOR - STATE - DEFAULT -->
+    <color name="base_start_color_default">#4a5564</color>
+    <color name="base_end_color_default">#4a5564</color>
+
+    <!-- ITEM BACKGROUND COLOR - STATE - DEFAULT -->
+    <color name="risk_start_color_default">#C0C0C0</color>
+    <color name="risk_end_color_default">#C0C0C0</color>
+
+    <!-- ITEM BACKGROUND COLOR - STATE - PRESSED -->
+    <color name="base_start_color_pressed">#ff3590c4</color>
+    <color name="base_end_color_pressed">#ff2570ba</color>
+
+    <!-- ITEM TEXT COLORS - STATES - PRESSED AND DEFAULT -->
+    <color name="text_color_default">#000000</color>
+    <color name="text_color_pressed">#ffffff</color>
+
+</resources>

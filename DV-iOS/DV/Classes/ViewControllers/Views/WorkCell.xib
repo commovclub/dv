@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WorkCell" rowHeight="276" id="2" customClass="WorkCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="276"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2" id="zHD-Pj-XB4">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="275"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" id="yeK-0F-fNA">
+                        <rect key="frame" x="10" y="4" width="300" height="271"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.9549386160714286" green="0.9549386160714286" blue="0.9549386160714286" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里显示作品描述" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6AD-TS-Gn8">
+                        <rect key="frame" x="15" y="6" width="290" height="42"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" id="Ms8-sR-rXC" userLabel="View  time">
+                        <rect key="frame" x="15" y="40" width="300" height="29"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" id="dq9-VZ-C8C">
+                                <rect key="frame" x="252" y="-1" width="33" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="。。。">
+                                    <color key="titleColor" red="0.067545571339999999" green="0.5596679148" blue="0.98719853940000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnDeleteBtn:" destination="2" eventType="touchUpInside" id="aVl-yH-xzs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="这里显示时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="29">
+                                <rect key="frame" x="2" y="6" width="147" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.61234454719387754" green="0.61234454719387754" blue="0.61234454719387754" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" id="BSD-Gj-nAP" userLabel="View 1">
+                        <rect key="frame" x="10" y="68" width="300" height="60"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="gj1-TR-abv" customClass="ITTImageView">
+                                <rect key="frame" x="8" y="0.0" width="90" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Re3-Li-bEx" customClass="ITTImageView">
+                                <rect key="frame" x="105" y="0.0" width="90" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Lp4-8d-bkp" customClass="ITTImageView">
+                                <rect key="frame" x="202" y="0.0" width="90" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" id="NEP-tm-cpO" userLabel="View 2">
+                        <rect key="frame" x="11" y="135" width="300" height="60"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="QEZ-se-TLa" customClass="ITTImageView">
+                                <rect key="frame" x="8" y="0.0" width="90" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="hOC-nl-pr0" customClass="ITTImageView">
+                                <rect key="frame" x="105" y="0.0" width="90" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="U1s-dz-fPr" customClass="ITTImageView">
+                                <rect key="frame" x="202" y="0.0" width="90" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" id="WM3-Fr-2IV" userLabel="View 3">
+                        <rect key="frame" x="11" y="203" width="300" height="60"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="x0X-gc-eUm" customClass="ITTImageView">
+                                <rect key="frame" x="8" y="0.0" width="90" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="tBA-dB-f2n" customClass="ITTImageView">
+                                <rect key="frame" x="104" y="0.0" width="90" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="8" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Bho-mH-T5a" customClass="ITTImageView">
+                                <rect key="frame" x="202" y="0.0" width="90" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" id="rk0-xv-lqW" userLabel="View 0">
+                        <rect key="frame" x="10" y="68" width="300" height="200"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="CdW-Si-m6A" customClass="ITTImageView">
+                                <rect key="frame" x="10" y="3" width="280" height="192"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="deleteButton" destination="dq9-VZ-C8C" id="Y1E-W0-qCF"/>
+                <outlet property="descLabel" destination="6AD-TS-Gn8" id="yhu-tl-Ang"/>
+                <outlet property="iv0" destination="CdW-Si-m6A" id="MKr-d9-NoG"/>
+                <outlet property="iv1" destination="gj1-TR-abv" id="Dly-93-3ob"/>
+                <outlet property="iv2" destination="Re3-Li-bEx" id="jOW-LG-X2x"/>
+                <outlet property="iv3" destination="Lp4-8d-bkp" id="RDx-gT-EPg"/>
+                <outlet property="iv4" destination="QEZ-se-TLa" id="6ow-4h-l7n"/>
+                <outlet property="iv5" destination="hOC-nl-pr0" id="p7e-i7-MWs"/>
+                <outlet property="iv6" destination="U1s-dz-fPr" id="0Go-3W-Acv"/>
+                <outlet property="iv7" destination="x0X-gc-eUm" id="08I-M9-dgB"/>
+                <outlet property="iv8" destination="tBA-dB-f2n" id="74j-vb-9zE"/>
+                <outlet property="iv9" destination="Bho-mH-T5a" id="Ng7-qr-fR0"/>
+                <outlet property="timeLabel" destination="29" id="rtr-gO-a0d"/>
+                <outlet property="view0" destination="rk0-xv-lqW" id="A4T-Uu-HkO"/>
+                <outlet property="view1" destination="BSD-Gj-nAP" id="Xq5-7r-qCf"/>
+                <outlet property="view2" destination="NEP-tm-cpO" id="lrT-g1-u7m"/>
+                <outlet property="view3" destination="WM3-Fr-2IV" id="V2L-0v-oWL"/>
+                <outlet property="viewBg" destination="yeK-0F-fNA" id="Hmf-aD-bbf"/>
+                <outlet property="viewTime" destination="Ms8-sR-rXC" id="gua-Cn-3kX"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

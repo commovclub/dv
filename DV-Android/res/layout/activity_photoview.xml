@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <com.commov.app.dv.photoview.widget.HackyViewPager
+        android:id="@+id/hacky_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:background="#99FFFFFF"
+        android:gravity="bottom|right" >
+
+        <ImageButton
+            android:id="@+id/ib_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="left"
+            android:paddingLeft="24dp"
+            android:paddingRight="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/img_index_info"
+            style="@style/text_middle_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="25dp"
+            android:gravity="right"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+</FrameLayout>
